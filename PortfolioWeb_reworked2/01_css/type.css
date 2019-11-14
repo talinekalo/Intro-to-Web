@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400&display=swap');
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+  color: #faebd7 /* #faebd7 ANTIQUE WHITE*/;
+  letter-spacing: 3px;
+  text-shadow:0 0 10px #d2a796/*efdfbb #F4D4A9*/;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  color: white;
+
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+
+}
+
+
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: #9c7b6e;
+}
+
+p{
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+
+
+
+.menu a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+
+}
+.sub ul{
+  text-align: center;
+}
+.sub a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+
+}
