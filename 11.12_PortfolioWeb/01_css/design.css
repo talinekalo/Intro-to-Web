@@ -1,0 +1,116 @@
+* {
+        box-sizing: border-box;
+      }
+      body{
+        margin:0;
+      }
+
+      a:hover{
+        color: #ded2b6;
+      }
+
+      .bucket{
+        width:100%;
+        margin:auto;
+        background-color:#fefefa;
+        padding:2vw;
+      }
+      .sq{
+        width:10%;
+        float:left;
+        height:150px;
+
+      }
+      .row{
+        width:100%;
+        padding: 10px 0px;
+      }
+      .row::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+      hr{
+        border:1px solid gray;
+      }
+
+      .subs{
+        font-family: 'Heebo', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+      }
+
+
+
+      /* COLORS */
+
+.beige{
+  background-color:#faebd7;
+
+}
+
+.greenish{
+  background-color: #e6e4b4;
+
+}
+
+.floral_white{
+  background-color:#fefefa;
+
+}
+
+.pale_pink{
+  background-color:#d2a796;
+
+}
+
+.yellow{
+  background-color:#fcd574;
+}
+
+/* http://www.varian.net/dreamview/dreamcolor/earth.html */
+
+.e1{
+  background-color:#9CB29E;
+}
+.e2{
+  background-color:#9CAC88;
+}
+.e3{
+  background-color:#B0BB89;
+}
+.e4{
+  background-color:#C5BE84;
+}
+.e5{
+  background-color:#D5CC7F;
+}
+.e6{
+  background-color:#CDBF81;
+}
+.e7{
+  background-color:#C5AB84;
+}
+
+.ea1{
+  background-color:#B9C2AA;
+}
+.ea2{
+  background-color:#BABFA1;
+}
+.ea3{
+  background-color:#C5C8A0;
+}
+.ea4{
+  background-color:#CFC89E;
+}
+.ea5{
+  background-color:#D8D09B;
+}
+.ea6{
+  background-color:#D4C99C;
+}
+.ea7{
+  background-color:#D0C09D;
+}

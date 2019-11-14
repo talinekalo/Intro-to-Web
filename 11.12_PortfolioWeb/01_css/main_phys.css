@@ -1,0 +1,252 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+  color: #9CB29E /* #faebd7 ANTIQUE WHITE*/;
+  letter-spacing: 3px;
+  text-shadow:0 0 10px #6f8070/*efdfbb #F4D4A9*/;
+}
+
+a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: #6f8070;
+}
+
+.container{
+  width:100%;
+  background-color:#9CB29E;
+  margin: auto;
+
+
+}
+
+
+.logo{
+  float:left;
+  margin: auto;
+  width:100%;
+  height:80px;
+  text-align: center;
+
+}
+
+
+.menu{
+  float:left;
+  width:100%;
+  margin:auto;
+  padding-bottom: 150px;
+  padding-top: 5px;
+}
+
+.clear_fix{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+.menu > ul{
+
+  list-style: none;
+  display:flex;
+  margin:0;
+  padding:0;
+  justify-content: center;
+
+}
+
+.menu li{
+  list-style: none;
+  padding: 5px 10px;
+}
+
+.menu a:hover{
+  color:white;
+}
+
+.sub{
+  display:none;
+  position: absolute;
+  padding-top: 5px;
+  width:100px;
+  height:100px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+li:hover .sub{
+  display: block;
+}
+
+.sub ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+  text-align: center;
+
+}
+
+.work_row{
+  width:100%;
+  margin:auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 200px;
+
+}
+
+.thumb_mod{
+
+  height:500px;
+  background: #fefefa;
+  box-shadow: 0 4px 8px 0 #6f8070, 0 6px 20px 0 #6f8070;
+
+}
+
+
+.hero{
+  width:100%;
+  margin:auto;
+}
+
+.hero img{
+  width:100%;
+  display:block;
+  margin:auto;
+}
+
+.phys1{
+  background-image: url(../02_img/lemons.png);
+  width:100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.phys2{
+  background-image: url(../02_img/chess.png);
+  width:100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.phys3{
+  background-image: url(../02_img/boat.png);
+  width:100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.over{
+  position: absolute;
+  text-align: left;
+  top: 0;
+  left:0;
+  z-index: -1;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,.5);
+
+}
+
+.textpos{
+  position: absolute;
+  top:420px;
+  left:20px;
+
+}
+
+.thumb_mod:hover .over{
+  z-index:1;
+
+
+}
+
+.close{
+
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*  MODAL  */
+
+.modal{
+  display:none;
+  position:fixed;
+  z-index: 1;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.75);
+  width: 100vw;
+  height:100vh;
+  overflow:auto;
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display:block;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
